@@ -1,0 +1,175 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Fichas",
+				"abbreviation": "FS",
+				"full": "Fichas",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1603809596,
+		"dateLastModified": 1603809596
+	},
+	"monster": [
+		{
+			"name": "Emiteron",
+			"source": "Fichas",
+			"page": 164,
+			"size": "M",
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "21d12 + 196",
+				"average": 332
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 22,
+			"int": 17,
+			"wis": 26,
+			"cha": 1,
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 24,
+			"immune": [
+				"bludgeoning",
+				"force",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Falled Sun",
+					"entries": [
+						"The emiteron sheds dim light in a 60-foot radius. "
+					]
+				},
+				{
+					"name": "Matter Stream",
+					"entries": [
+						" At the start of each of its turns, the emiteron can choose to",
+						"begin projecting a stream of matter in a 1-mile-long line that is 5 feet wide. A",
+						"creature that starts its turn in the matter stream or enters the area for the first time on",
+						"a turn takes [[{@dice 8d10}]] force damage. Any unattended objects or structures caught in",
+						"the path of the stream take 100 force damage at the end of each of the emiteron’s",
+						"turns.",
+						"Additionally, on each of its turns the emiteron can change the orientation of",
+						"the stream to another orientation of its choice, sweeping the beam across the space",
+						"between both orientations by the shortest possible distance. Creatures caught in the",
+						"path of the stream as it changes direction must succeed on a {@dc 22} Dexterity saving",
+						"throw or take [[{@dice 8d6}]] force damage, or half as much on a success.",
+						"Finally, creatures, objects, and structures reduced to 0 hit points by this effect",
+						"are disintegrated. "
+					]
+				},
+				{
+					"name": "Super Heavy",
+					"entries": [
+						"The emiteron is made of dense stellar matter, weighing over",
+						"1,000,000 pounds. The emiteron cannot be pushed or forcibly moved against its will",
+						"and cannot be magically teleported unless the emiteron allows it. "
+					]
+				}
+			],
+			"senseTags": [
+				"U"
+			],
+			"damageTags": [
+				"S",
+				"N"
+			],
+			"tokenUrl": "https://5e.tools/img/DMG/Avatar of Death.png?v=1.114.1",
+			"fluff": {
+				"name": "Avatar of Death",
+				"source": "DMG",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Summoned by the \"Skull\" card from the {@item Deck of Many Things}."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"cr": "17",
+			"save": {
+				"str": "+7",
+				"int": "+9",
+				"wis": "+14"
+			},
+			"skill": {
+				"perception": "+14"
+			},
+			"miscTags": [
+				"AOE"
+			],
+			"action": [
+				{
+					"name": "Gravity Pulse {@recharge 5}",
+					"entries": [
+						"The emiteron emits a pulse of force in a 300-foot",
+						"radius. Each creature in the affected area must succeed on a {@dc 22} Strength saving",
+						"throw or be pushed in a straight line to the edge of the affected area, or 60 feet away",
+						"from the emiteron in a straight line on a success. "
+					]
+				},
+				{
+					"name": "Itensify",
+					"entries": [
+						"The emiteron increases the damage dealt by its Matter Stream effect by",
+						"two damage dice, and it loses [[{@dice 4d10}]] hit points. The benefits of this action last",
+						"until the emiteron finishes a short or long rest. "
+					]
+				},
+				{
+					"name": "Irradiate",
+					"entries": [
+						"The emiteron contaminates a creature it can see within 60 feet of it with",
+						"cosmic radiation. The target must succeed on a {@dc 22} Constitution saving throw or",
+						"take [[{@dice 8d8}]] poison damage and become {@condition poisoned}. While so {@condition poisoned} in this",
+						"manner, a creature’s vision and senses are reduced to 10 feet. At the end of each of",
+						"its turns, an affected creature can repeat the saving throw, ending the effect on a",
+						"success"
+					]
+				}
+			]
+		}
+	]
+}

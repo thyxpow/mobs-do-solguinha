@@ -1,0 +1,186 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Fichas",
+				"abbreviation": "FS",
+				"full": "Fichas",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1603809607,
+		"dateLastModified": 1603809607
+	},
+	"monster": [
+		{
+			"name": "Magniferi",
+			"source": "Fichas",
+			"page": 164,
+			"size": "G",
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "41d20 + 369",
+				"average": 799
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 23,
+			"dex": 1,
+			"con": 29,
+			"int": 8,
+			"wis": 21,
+			"cha": 1,
+			"senses": [
+				"darkvision 12 ft."
+			],
+			"passive": 22,
+			"immune": [
+				"fire",
+				"necrotic"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Immense",
+					"entries": [
+						"The magniferi’s size is tremendous. Its body typically occupies a 50-footradius space. "
+					]
+				},
+				{
+					"name": "Molten Core",
+					"entries": [
+						"The magniferi can occupy another creature’s space and vice versa.",
+						"Creatures within the magniferi have total cover against creatures and effects outside",
+						"its space, and vice versa. When a creature starts its turn within a magniferi’s space,",
+						"it takes [[{@dice 2d12}]] fire damage and [[{@dice 2d12}]] necrotic damage.",
+						" Additionally, within the magniferi’s space is its core. The core is a Medium",
+						"molten sphere of metal that moves with the magniferi and has total cover against",
+						"creatures outside the magniferi’s space. A creature that deals damage to the core of",
+						"the magniferi instead deals double damage. "
+					]
+				},
+				{
+					"name": "Super Heavy",
+					"entries": [
+						"The magniferi is made of dense stellar matter, weighing over",
+						"10,000,000 pounds. The magniferi cannot be pushed or forcibly moved against its",
+						"will and cannot be magically teleported unless the magniferi allows it. "
+					]
+				},
+				{
+					"name": "Unstable",
+					"entries": [
+						"If the magniferi takes 50 or more damage in a single turn, it emits a pulse",
+						"of solar radiation in a 120-foot-radius sphere. Each creature in the affected area takes",
+						"[[{@dice 2d10}]] fire damage and [[{@dice 2d10}]] necrotic damage. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Erupt",
+					"entries": [
+						"The body of the magniferi emits a column of molten stellar matter in a 60-",
+						"foot cone. Each creature in the affected area must succeed on a {@dc 24} Dexterity",
+						"saving throw or be coated in molten sludge. A creature so coated cannot regain hit",
+						"points, and at the start of each of its turns it takes damage (half fire, half necrotic,",
+						"rounded down in each case) equal to its Constitution score. A creature within reach",
+						"of the sludge can use an action to attempt a {@dc 24} Strength (Athletics) check,",
+						"removing the sludge on a success. "
+					]
+				},
+				{
+					"name": "Gravitational Pull",
+					"entries": [
+						"The magniferi afflicts a creature it can see within 120 feet of it",
+						"with a powerful gravitational pull. The target must succeed on a {@dc 24} Strength",
+						"saving throw or be pulled 60 feet toward the magniferi by the quickest available",
+						"route and {@condition restrained} until the end of the magniferi’s next turn. A creature {@condition restrained}",
+						"in this manner is suspended in the air. "
+					]
+				},
+				{
+					"name": "Stellar Collapse",
+					"entries": [
+						"The magniferi dies in a tremendous explosion that erupts from its",
+						"body in a 1-mile-radius sphere. Each creature in the affected area must succeed on a",
+						"{@dc 24} Constitution saving throw or take damage (half fire, half necrotic, rounded",
+						"down in each case) equal to the number of hit points the magniferi possessed before",
+						"it died from this effect. "
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"S",
+				"N"
+			],
+			"tokenUrl": "https://5e.tools/img/DMG/Avatar of Death.png?v=1.114.1",
+			"fluff": {
+				"name": "Avatar of Death",
+				"source": "DMG",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Summoned by the \"Skull\" card from the {@item Deck of Many Things}."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"cr": "21",
+			"save": {
+				"str": "+13",
+				"con": "+16",
+				"wis": "+12"
+			},
+			"skill": {
+				"perception": "+12"
+			},
+			"resist": [
+				"bludgeoning",
+				"cold",
+				"piercing",
+				"slashing"
+			],
+			"miscTags": [
+				"AOE"
+			]
+		}
+	]
+}

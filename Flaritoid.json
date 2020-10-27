@@ -1,0 +1,192 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Fichas",
+				"abbreviation": "FS",
+				"full": "Fichas",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1603809602,
+		"dateLastModified": 1603809602
+	},
+	"monster": [
+		{
+			"name": "Flaritoid",
+			"source": "Fichas",
+			"page": 164,
+			"size": "M",
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"formula": "21d8 + 196",
+				"average": 290
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 8,
+			"dex": 22,
+			"con": 20,
+			"int": 15,
+			"wis": 19,
+			"cha": 1,
+			"senses": [
+				"darkvision 120 ft.,"
+			],
+			"passive": 18,
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Flickering Flames",
+					"entries": [
+						"The flaritoid can spend its movement to magically",
+						"teleport to an unoccupied space. The distance of the teleport is equal to the amount",
+						"of movement spent. When the flaritoid enters a space for the first time on a turn",
+						"using this feature, it erupts in an explosion of flame that deals [[{@dice 4d4}]] fire damage",
+						"and [[{@dice 4d4}]] radiant damage to each enemy creature within 5 feet of it. If the flaritoid",
+						"attempts to teleport to a space that is occupied, its movement is wasted, and the effect",
+						"fails. "
+					]
+				},
+				{
+					"name": "Ignition",
+					"entries": [
+						"When the flaritoid hits a target with an attack, it deals an additional 7 ({@dice 2d6})",
+						"fire damage and 7 ({@damage 2d6}) radiant damage (included in the attack). Additionally,",
+						"targets hit by the flaritoid’s attacks catch fire for 1 minute, taking an additional 3",
+						"({@dice 1d6}) fire damage and 3 ({@damage 1d6}) radiant damage at the start of each of its turns. The",
+						"fires can be extinguished by an affected target becoming completely immersed in",
+						"water. "
+					]
+				},
+				{
+					"name": "Living Sun",
+					"entries": [
+						"The flaritoid sheds daylight in a 1-mile radius and dim light for an",
+						"additional 9 miles. "
+					]
+				},
+				{
+					"name": "Super Heavy",
+					"entries": [
+						"The flaritoid is made of dense stellar matter, weighing over 100,000",
+						"pounds. The flaritoid cannot be pushed, pulled, or forcibly moved against its will",
+						"and cannot be magically teleported unless the flaritoid allows it. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The flaritoid makes up to two Collide attacks, each of which must be",
+						"against a different target. "
+					]
+				},
+				{
+					"name": "Collide",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage, plus 13 ({@damage 4d6 - 1}) Fire/Radiant damage."
+					]
+				},
+				{
+					"name": "Solar Flare",
+					"entries": [
+						"The flaritoid emits a burst of magical solar energy in a 60-foot cone. Each creature in the affected area must succeed on a {@dc 18} Constitution saving throw or have its concentration broken (if concentrating on a spell or effect), and all spells of 6th level or lower affecting it immediately end. "
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"tokenUrl": "https://5e.tools/img/DMG/Avatar of Death.png?v=1.114.1",
+			"fluff": {
+				"name": "Avatar of Death",
+				"source": "DMG",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Summoned by the \"Skull\" card from the {@item Deck of Many Things}."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"cr": "12",
+			"save": {
+				"con": "+14",
+				"int": "+8",
+				"wis": "+14"
+			},
+			"skill": {
+				"acrobatics": "+14",
+				"perception": "+8"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"radiant",
+				"slashing"
+			],
+			"reaction": [
+				{
+					"name": "Flash",
+					"entries": [
+						"When the flaritoid is hit by an attack, it can use a reaction to emit a blinding",
+						"flash of light. Each creature that has line of sight to the flaritoid and is within 1 mile",
+						"of it must succeed on a {@dc 18} Constitution saving throw or become permanently",
+						"{@condition blinded}. Additionally, if the source of the attack fails this saving throw, it takes [[{@dice 6d8}]] radiant damage. "
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			]
+		}
+	]
+}
